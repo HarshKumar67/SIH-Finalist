@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REAL TIME MONITORING</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #d1c4e9, #9774df);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d1c4e9;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* Header Styling */
+        header {
+            margin-top: 100px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Container Styling */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Text Styling */
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Steps Styling */
+        .steps {
+            margin: 20px 0;
+            text-align: left;
+            padding: 15px;
+            border-left: 4px solid #d1c4e9;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .steps p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        /* Button Styling */
+        .primary-button {
+            background-color: #d1c4e9;
+            color: #6a1b9a;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .primary-button:hover {
+            background-color: #ba68c8;
+            transform: translateY(-3px);
+        }
+
+        button.primary-button {
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            header {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .primary-button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="logo">REAL TIME MONITORING</span>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#steps">Steps</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Real Time Monitoring System</h1>
+    </header>
+    <div class="container" id="home">
+        <h2>Welcome to the Real time monitoring System</h2>
+        <p>Accurately monitor the height of structures using cutting-edge technology for precision and efficiency.</p>
+
+        <div class="steps" id="steps">
+            <p><strong>Step 1:</strong> Plan your drone's path.</p>
+            <p><strong>Step 2:</strong> Initiate real-time monitoring.</p>
+        </div>
+
+        <a href="https://flylitchi.com/hub" class="primary-button">Path Planning</a>
+        <form action="/monitor" method="POST" style="display: inline;">
+            <button type="submit" class="primary-button">Start Real-Time Monitoring</button>
+        </form>
+    </div>
+</body>
+</html>
+
