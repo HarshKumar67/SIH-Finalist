@@ -61,6 +61,18 @@ To enhance visualization and analysis, the system generates **3D models** of the
 
 ---
 
+## 📸 Screenshots
+
+![Screenshot 2025-02-03 121901](https://github.com/user-attachments/assets/d642774b-7b7f-4e2e-99ab-37b1d293d1f3)
+
+![Screenshot 2025-02-03 121954](https://github.com/user-attachments/assets/8a79f200-ee26-40cd-94d6-bab41995119d)
+
+![Screenshot 2025-02-03 122119](https://github.com/user-attachments/assets/fc3e6955-8a50-44e0-8324-164ced6ec572)
+
+![Screenshot 2025-02-03 122136](https://github.com/user-attachments/assets/eff07b0e-e777-4568-9f23-5949d8b58b1e)
+
+---
+
 ## **Applications**  
 📍 **Real-Time Surveillance:** Monitor unauthorized construction in urban and rural zones.  
 📍 **Regulatory Compliance:** Ensure adherence to **building laws and zoning regulations**.  
